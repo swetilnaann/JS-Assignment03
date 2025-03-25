@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pookie Pizza - Order Your Favorite Pizza</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <img src="images/logo.jpg" alt="Pookie Pizza Logo" class="logo">
+    <h1>Pookie Pizza🍕</h1>
+</header>
+
+<main>
+    <div class="container">
+        <h2>Customize Your Pizza</h2>
+        <form id="pizza-form">
+            <!-- Crust Selection -->
+            <div class="form-section">
+                <label>Crust🫓:</label>
+                <div class="options" id="crust-div">
+                    <input type="radio" id="thin-crust" name="crust" value="Thin" checked>
+                    <label for="thin-crust">Thin</label>
+                    <input type="radio" id="thick-crust" name="crust" value="Thick">
+                    <label for="thick-crust">Thick</label>
+                    <input type="radio" id="gluten-free-crust" name="crust" value="Gluten-free">
+                    <label for="gluten-free-crust">Gluten-free</label>
+                </div>
+            </div>
+
+            <!-- Sauce Selection -->
+            <div class="form-section">
+                <label for="sauce">Sauce🍅:</label>
+                <select id="sauce" name="sauce">
+                    <option value="Marinara">Marinara</option>
+                    <option value="Arrabbiata">Arrabbiata</option>
+                    <option value="Pesto">Pesto</option>
+                </select>
+            </div>
+
+            <!-- Cheese Selection -->
+            <div class="form-section">
+                <label>Cheese🧀:</label>
+                <div class="options" id="cheese-div">
+                    <input type="checkbox" id="mozzarella" name="cheese" value="Mozzarella">
+                    <label for="mozzarella">Mozzarella</label>
+                    <input type="checkbox" id="parmesan" name="cheese" value="Parmesan">
+                    <label for="parmesan">Parmesan</label>
+                    <input type="checkbox" id="gorgonzola" name="cheese" value="Gorgonzola">
+                    <label for="gorgonzola">Gorgonzola</label>
+                </div>
+            </div>
+
+            <!-- Toppings Selection -->
+            <div class="form-section">
+                <label>Toppings🍄‍:</label>
+                <div class="options" id="toppings-div">
+                    <input type="checkbox" id="mushrooms" name="toppings" value="Mushrooms">
+                    <label for="mushrooms">Mushrooms</label>
+                    <input type="checkbox" id="onions" name="toppings" value="Onions">
+                    <label for="onions">Onions</label>
+                    <input type="checkbox" id="bell-peppers" name="toppings" value="Bell Peppers">
+                    <label for="bell-peppers">Bell Peppers</label>
+                    <input type="checkbox" id="olives" name="toppings" value="Olives">
+                    <label for="olives">Olives</label>
+                </div>
+            </div>
+
+            <!-- Meat Selection -->
+            <div class="form-section">
+                <label>Meat🥩:</label>
+                <div class="options" id="meat-div">
+                    <input type="radio" id="pepperoni-meat" name="meat" value="Pepperoni" checked>
+                    <label for="pepperoni-meat">Pepperoni</label>
+                    <input type="radio" id="sausage-meat" name="meat" value="Sausage">
+                    <label for="sausage-meat">Sausage</label>
+                    <input type="radio" id="bacon-meat" name="meat" value="Bacon">
+                    <label for="bacon-meat">Bacon</label>
+                </div>
+            </div>
+
+            <button id="order-btn" type="submit">Order Now!</button>
+        </form>
+
+        <div id="pizza-description"></div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Pookie Pizza. All rights reserved.</p>
+    <p id="student-info"></p>
+</footer>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
